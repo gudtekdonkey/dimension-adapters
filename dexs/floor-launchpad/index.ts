@@ -4,8 +4,8 @@ import { FetchOptions, SimpleAdapter } from "../../adapters/types";
 // (`FloorLaunch`) until it sells out, then graduates into a Uniswap v4 pool run by the FLOOR hook. Volume counts both
 // phases, in each launch's own quote asset (the chain's native asset, or an ERC-20 FLOOR lists — `quotes` below; a launch
 // quoted in anything else is not shown on FLOOR and is not counted).
-// Both registries are read: the current set and the one before it.
-const REGISTRIES = ['0x623c349ac8cBBD796f1E9540f902b9BfA9cD5804', '0x1FC800959Edd950D53c87dC415994dFC8c7692d1'];
+// The live set's registry (the set before it listed no launch on any chain).
+const REGISTRIES = ['0x623c349ac8cBBD796f1E9540f902b9BfA9cD5804'];
 
 type ChainConfig = {
   poolManager: string; // the chain's Uniswap v4 PoolManager
